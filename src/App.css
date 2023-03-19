@@ -1,38 +1,132 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+a{
+  text-decoration:none;
+  color: #333;
+} 
+
+a:hover{
+  opacity: .8;
+}
+
 .App {
   text-align: center;
+  padding: 60px 0;
+  overscroll-behavior: contain;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 10px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header .container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header a{
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Login */
+.login-box {
+  padding-top: 20px;
+  /* display: flex;
+  align-items: center; */
+  /* height: 100vh;
+  min-height: 500px; */
+}
+.login-box form {
+}
+/* Login END */
+
+.messages {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 300px;
+}
+.message-list {
+  /* padding: 60px 0; */
+}
+.message {
+  margin-bottom: 10px;
+}
+
+.message img {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.you {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.account-image{
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.footer {
+  background-color: #f3f3ff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+
+.footer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footer .submit {
+  border: none;
 }

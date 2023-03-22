@@ -34,7 +34,7 @@ function FooterMessage({scroll}) {
         <div className='container'>
             <form onSubmit={handleSubmit}>
                 <Input 
-                style={{backgroundColor:'#333'}}
+                style={{backgroundColor:'#333', color:'#fff'}}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 />
